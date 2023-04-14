@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    color:black;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-style: italic;
+    background-color: chocolate;
+    margin: 0 auto;
+    padding: 10px;
+    width:900px;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-image: url(Lead-Paris-view-point.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body>section{
+    border-style: solid;
+    background-color: white;
+    max-width: 900px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body>section>article{
+    font-size: 20px;
+}
+
+body img{
+    width: 100%;
+    align-self: center;
+    border-style: solid;
+}
+
+
+nav.footer{
+    background-color:chocolate;
+    font-size: 18px;
+    gap:10em;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 1.5em;;
+
+}
+nav.footer h1{
+    font-size: 36px;
+    background-color: chocolate;
+}
+nav.footer img{
+    width: 20px;
+    height: 16px;
+}
+/* Mobile Devices */
+@media screen and (max-width: 480px){
+
+    body>section{
+    display: block;
+        margin:0 auto;
+        align-items: center;
+    }
+
+    nav.footer{
+        margin:0 auto;
+        font-size: 14px;
+        background-color: chocolate;
+        width:1400px;
+    }
+
+}
+
+/* Desktop Devices  */
+@media screen and (min-width: 769px){
+}
+
+/* Projector */
+@media screen and (width:1280px){
+    
+}

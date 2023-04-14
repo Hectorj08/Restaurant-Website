@@ -1,0 +1,91 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    color:white;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-style: italic;
+    background-color: black;
+    margin: 0 auto;
+    padding: 10px;
+    width:900px;
+}
+nav.horizontal{
+    background: black;
+    border-color: white;
+}
+nav.horizontal a{
+    color:white;
+}
+
+body{
+    width: 90%;
+    background-image: url(restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h2, h3, h4{
+    font-size:28px;
+}
+body > section{
+    width: 700px;
+    margin: 0 auto;
+    padding: 2em;
+}
+body > section> article{
+    color:aliceblue;
+    text-align: center;
+    border-style: solid;
+    background-color: black;
+    font-size: 18px;
+}
+
+nav.footer{
+    width:1400px;
+    border-color: white;
+    background-color: black;
+    font-size: 18px;
+    gap:10em;
+    text-align: center;
+    margin:0 auto;
+    padding-bottom: 1.5em;
+}
+nav.footer h1{
+    font-style: italic;
+    font-size: 36px;
+    background-color:black;
+}
+nav.footer a{
+    color:white;
+}
+/* Mobile Devices */
+@media screen and (max-width: 480px){
+    body > section{
+        margin:0 auto;
+    }
+    body{
+        background-size:cover;
+        background-color: black;
+    }
+    nav.footer{
+        width:1400px;
+        gap: -5em;
+        padding: -5em;
+    }
+    nav.footer a{
+        font-size: 18px;
+        text-align: left;
+    }
+
+}
+/* Desktop Devices  */
+@media screen and (min-width: 769px){
+    body{
+        background-size: cover;
+    }
+}
+/* Projector */
+@media screen and (width:1280px){
+    
+}

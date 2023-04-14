@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Reservations | Hector's French Cuisine</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="reserve.css" rel="stylesheet" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Hector's French Cuisine</h1>
+    <header>
+        <nav class="horizontal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reserve.html">Reservations</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+<article>
+
+<div class = "info">
+<form method="post">
+
+<fieldset><legend align="left"><strong>Make a Reservation</strong></legend>
+<Strong>Full Name: </Strong><input name="fullname" type="text" size="35" placeholder="Name" />
+<Strong>Email Address: </Strong> <input name="email" type="text" size="35" placeholder="Email"/>
+<br/>
+<br /><Strong>Phone Number: </Strong><input name="Phone" type="text" size="30" placeholder="Phone #"/>
+
+<p><Strong>Number of People: </Strong>
+<select>
+   <option>1 Person</option>
+   <option>2 People</option>
+   <option>3 People</option>
+   <option>4 People</option>
+   <option>5 People</option>
+   <option>6 People</option>
+   <option>7+ People</option>
+</select>
+</p>
+<p><Strong>Date: </Strong>
+    <input type="date" id="date">
+</p>
+
+<p><Strong>Time: </Strong>
+    <select>
+       <option>12:00 pm</option>
+       <option>12:30 pm</option>
+       <option>1:00 pm</option>
+       <option>1:30 pm</option>
+       <option>2:00 pm</option>
+       <option>2:30 pm</option>
+       <option>3:00 pm</option>
+       <option>3:30 pm</option>
+       <option>4:00 pm</option>
+       <option>4:30 pm</option>
+       <option>5:00 pm</option>
+       <option>5:30 pm</option>
+       <option>6:00 pm</option>
+       <option>6:30 pm</option>
+       <option>7:00 pm</option>
+       <option>7:30 pm</option>
+       <option>8:00 pm</option>
+       <option>8:30 pm</option>
+       <option>9:00 pm</option>
+       <option>9:30 pm</option>
+       <option>10:00 pm</option>
+    </select>
+    </p>
+
+
+<p><Strong>Message:</Strong>
+<br />
+<textarea name="other" rows="5" cols="100" placeholder="Message"></textarea></p>
+</fieldset>
+
+</form>
+
+</article>
+</section>
+<button type="submit" class="test" onclick="openPopup()">Submit</button>
+<div class="popup" id="popup">
+<img src="tick.png">
+<h3>Thank You!</h3>
+<p>Your details has been successfully submitted!</p>
+<button type="button" onclick="closePopup()">OK</button>
+</div>
+</div>
+
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+
+<footer>
+    <nav class="footer">
+        <h1>Follow Us</h1>
+        <ul>
+           <li><a href="#"><img id="fbicon" src="fbicon.png" alt="" />Facebook</a></li>
+           <li><a href="#"><img id="twittericon" src="twittericon.png" alt="" />Twitter</a></li>
+           <li><a href="#"><img id="redditicon" src="redditicon.png" alt="" /> Reddit</a></li>
+           <li><a href="#"><img id="instagramicon" src="instagram.png" alt="" /> Instagram</a></li>
+           <li><a href="#">Reviews</a></li>
+           <li><a href="#">Careers</a></li>
+           <li><a href="#">Private Events</a></li>
+           <li><a href="#">Email Sign Up</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+        </ul>
+     </nav>
+</footer>
+
+</body>
+</html>
