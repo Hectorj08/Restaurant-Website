@@ -98,6 +98,9 @@ nav.footer h1{
     html{
         background-repeat: no-repeat;
     }
+    .test{
+        font-size: 18px;
+    }
 
     nav.footer{
         margin:0 auto;
