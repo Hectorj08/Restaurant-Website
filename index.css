@@ -70,8 +70,7 @@ nav.footer a{
     }
     nav.footer{
         width:1000px;
-        gap: -5em;
-        padding: -5em;
+        gap: -10em;
     }
     nav.footer a{
         font-size: 18px;
